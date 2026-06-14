@@ -131,7 +131,7 @@ footer { visibility: hidden; }
 # ── Carga del corpus ─────────────────────────────────────────────────────────
 @st.cache_resource
 def cargar_corpus():
-    with open('Corpus_crucero.txt', 'r', encoding='latin-1', errors='ignore') as f:
+    with open('Corpus_tutorias.txt', 'r', encoding='latin-1', errors='ignore') as f:
         raw = f.read().lower()
     return nltk.sent_tokenize(raw)
 
